@@ -1,0 +1,27 @@
+{
+  "name": "reactGetStarted",
+  "description": "Rest API",
+  "main": "server.js",
+  "authors": [
+    "RJA <kopanskyy.roman@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/RJA7/ReactGetStarted",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/js/libs",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "react": "^15.1.0",
+    "babel": "*",
+    "remarkable": "^1.6.2",
+    "requirejs-react-jsx": "^1.0.2",
+    "requirejs": "^2.2.0",
+    "text": "^2.0.15",
+    "jquery": "^3.0.0"
+  }
+}

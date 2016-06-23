@@ -2,23 +2,15 @@ define(function (require) {
 
     var React = require('react');
     var ReactDom = require('reactDom');
+    var Product = require('jsx!./containers/Product');
+    
+    var product = {category: 'asd'};
 
-    function App() {
-        this.AppView = React.createClass({
-            render: function () {
-                return (
-                    <div>
-                        <p>Hello, React!</p>
-                    </div>
-                );
-            }
-        });
-    }
-
-    App.prototype.init = function () {
-        ReactDom.render(<this.AppView />, document.getElementById('example'));
+    return function () {
+        ReactDom.render(
+            <Product />,
+            document.getElementById('content')
+        );
     };
-
-    return App;
 
 });

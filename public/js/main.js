@@ -1,10 +1,12 @@
 require.config({
     paths: {
-        react   : 'libs/react/react-with-addons',
-        reactDom: 'libs/react/react-dom',
-        babel   : 'libs/requirejs-react-jsx/babel-5.8.34.min',
-        jsx     : 'libs/requirejs-react-jsx/jsx',
-        text    : 'libs/requirejs-text/text'
+        react     : 'libs/react/react-with-addons',
+        reactDom  : 'libs/react/react-dom',
+        babel     : 'libs/requirejs-react-jsx/babel-5.8.34.min',
+        jsx       : 'libs/requirejs-react-jsx/jsx',
+        text      : 'libs/requirejs-text/text',
+        remarkable: 'libs/remarkable/dist/remarkable.min',
+        jquery    : 'libs/jquery/dist/jquery.min'
     },
 
     shim: {
@@ -23,7 +25,6 @@ require.config({
 
 require(['jsx!app'], function (App) {
 
-    var app = new App();
-    app.init();
+    App();
 
 });
